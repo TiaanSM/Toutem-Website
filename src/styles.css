@@ -9,6 +9,7 @@
 body {
     max-width: 100vw;
     overflow-x: hidden;
+    font-family: sans-serif;
 }
 
 .logo {
@@ -83,6 +84,7 @@ header {
     position: absolute;
     left: 100px;
     top: 280px;
+    color: #5fd788;
 }
 
 .header__desc {
@@ -90,4 +92,98 @@ header {
     position: absolute;
     left: 100px;
     top: 430px;
+}
+
+/*////*/
+
+.section__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0rem 1rem;
+    box-shadow: 2px 2px 4px lightgray;
+    margin-inline: 4px;
+}
+
+.card > label {
+    color: #5fd788;
+    margin-top: 20px;
+}
+
+/*////*/
+
+article {
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    margin-top: 3rem;
+}
+
+.article__bg1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #5fd788;
+    position: relative;
+    left: -200px;
+    top: 130px;
+}
+
+.article__bg2 {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: #5fd788;
+    position: relative;
+    left: -25px;
+}
+
+.article__img {
+    position: relative;
+    bottom: 600px;
+    left: 20px;
+}
+
+.article__content {
+    position: relative;
+    bottom: 950px;
+    left: 650px;
+}
+
+.article__title {
+    font-size: 2.5rem;
+    width: 24ch;
+    text-align: right;
+    color: #5fd788;
+}
+
+.article__desc {
+    width: 400px;
+    text-align: right;
+    position: relative;
+    left: 130px;
+    top: 1rem;
+}
+
+.article__cta {
+    position: relative;
+    left: 330px;
+    top: 3rem; 
+    padding: 0.5rem 1rem;
+    background-color: #5fd788;
+    color: white;
+    border-radius: 0.5rem;
 }
