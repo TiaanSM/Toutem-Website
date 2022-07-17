@@ -248,11 +248,39 @@ main {
 
 .main__card-content {
     position: relative;
-    bottom: 100px;
-    left: 0px;
-    width: 370px;
-    height: 80px;
+    bottom: 102px;
+    left: 4px;
+    width: 364px;
+    height: 90px;
     background-color: rgba(211, 211, 211, 0.767);
+    border-radius: 0px 0px 0px 15px;
+}
+
+.main__card-content > h4 {
+    padding-inline: 1rem;
+    margin-top: 0.5rem;
+    padding-top: 0.8rem;
+}
+
+.main__price {
+    margin-left: 1rem;
+    padding: 0.2rem 0.8rem;
+    color: white;
+    background-color: #5fd788;
+    border-radius: 1rem;
+}
+
+.main__card-content > p {
+    padding-left: 1rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+}
+
+.main__cart {
+    position: relative;
+    bottom: 60px;
+    left: 310px;
+    cursor: pointer;
 }
 
 .more__icon {
@@ -329,24 +357,55 @@ main {
 
 .trends-more {
     position: relative;
-    left: 685px;
-    bottom: 60px;
+    left: 710px;
+    bottom: 100px;
 }
 
 .trend__card {
     position: relative;
-    left: 250px;
+    left: 120px;
 }
 
-.trend__card:nth-child(3) {
-    position: relative;
-    left: 90px;
+.card2 {
+    left: -50px;
 }
 
-.trend__card > h3 {
+.trend__card-content {
+    width: 369px;
+    height: 90px;
     position: relative;
-    bottom: 80px;
-    left: 20px;
+    bottom: 100px;
+    left: 3px;
+    background-color: rgba(211, 211, 211, 0.342);
+    border-radius: 0px 0px 0px 20px;
+}
+
+.trend__card-content > h3 {
+    padding-top: 0.8rem;
+    padding-left: 1rem;
+    font-size: 1.1rem;
+}
+
+.trend__price {
+    font-size: 1rem;
+    margin-left: 1rem;
+    padding: 0.2rem 0.8rem;
+    color: white;
+    background-color: #5fd788;
+    border-radius: 1rem;
+}
+
+.trend__card-content > p {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+
+.trend__cart {
+    position: relative;
+    left: 320px;
+    bottom: 60px;
+    cursor: pointer;
 }
 
 /*///*/
@@ -367,18 +426,24 @@ main {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
 }
 
 .blog__card {
     width: 370px;
     height: 395px;
-    border: 1px solid red;
     border-radius: 1rem;
-    box-shadow: 2px 2px 4px lightgray;
+    box-shadow: 2px 2px 4px rgb(180, 180, 180);
 }
 
-.block__card > img {
-    overflow: hidden;
+.blog__content > h4 {
+    padding: 1rem;
+    color: #5fd788;
+}
+
+.blog__content > p {
+    padding: 1rem;
 }
 
 /*///*/
@@ -406,6 +471,7 @@ footer {
 
 .links > a {
     margin: 0.2rem 0rem;
+    padding: 0.125rem;
 }
 
 aside {
