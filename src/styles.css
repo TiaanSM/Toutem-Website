@@ -60,11 +60,11 @@ header {
 }
 
 .header__img {
-    width: 841px;
-    height: 627px;
-    position: absolute;
-    top: 163px;
-    right: -5px;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    left: 550px;
+    top: 50px;
     z-index: 1;
 }
 
@@ -74,8 +74,8 @@ header {
     border-radius: 80% 70% 90% 70%;
     background-color: #5fd788;
     position: relative;
-    bottom: 360px;
-    left: 550px;
+    bottom: 900px;
+    left: 600px;
     z-index: -1;
 }
 
@@ -86,6 +86,7 @@ header {
     left: 100px;
     top: 280px;
     color: #5fd788;
+    margin: 1rem 2rem;
 }
 
 .header__desc {
@@ -93,11 +94,12 @@ header {
     position: absolute;
     left: 100px;
     top: 430px;
+    margin: 1rem 2rem;
 }
 
-/*////*/
+/* Product = type, animation, small details */
 
-.section__container {
+.product__container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,7 +108,7 @@ header {
     flex-wrap: wrap;
 }
 
-.card {
+.product__card {
     width: 250px;
     height: 250px;
     background-color: white;
@@ -116,7 +118,7 @@ header {
     flex-direction: column;
     border-radius: 0rem 1rem;
     box-shadow: 2px 2px 4px lightgray;
-    margin-inline: 4px;
+    margin: 1rem 4px;
 }
 
 .card > label {
@@ -126,42 +128,24 @@ header {
 
 /*////*/
 
-article {
+.aroma__section {
     width: 100%;
-    height: 700px;
+    height: 650px;
     background-color: white;
     margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.article__bg1 {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background-color: #5fd788;
-    position: relative;
-    left: -200px;
-    top: 130px;
-}
 
-.article__bg2 {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    background-color: #5fd788;
-    position: relative;
-    left: -25px;
-}
 
 .article__img {
-    position: relative;
-    bottom: 600px;
-    left: 20px;
+    max-width: 100%;
 }
 
 .article__content {
-    position: relative;
-    bottom: 950px;
-    left: 650px;
+    height: auto;
 }
 
 .article__title {
@@ -169,42 +153,42 @@ article {
     width: 24ch;
     text-align: right;
     color: #5fd788;
+    margin-bottom: 1rem;
 }
 
 .article__desc {
     width: 400px;
     text-align: right;
-    position: relative;
-    left: 130px;
-    top: 1rem;
+    margin-left: 8rem;
+    margin-bottom: 1rem;
 }
 
 .article__cta {
-    position: relative;
-    left: 330px;
-    top: 3rem; 
     padding: 0.5rem 1rem;
     background-color: #5fd788;
     color: white;
     border-radius: 0.5rem;
+    margin-left: 21.125rem;
 }
 
 /*////*/
 
 main {
     background-color: white;
-    height: 600px;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .main__content {
-    position: relative;
-    left: 90px;
-    top: -40px;
     z-index: 1;
-    width: auto;
+    height: auto;
+    min-width: 360px;
+    margin: 2rem 6rem 2rem 2rem;
+    text-align: center;
 }
 
 .main__content > h2 {
@@ -216,30 +200,26 @@ main {
 
 .main__content-cta {
     background-color: #5fd788;
-    padding: 1rem 3rem;
+    padding: 1rem 5rem;
     border-radius: 0.5rem;
     color: white;
-}
-
-.main__content-bg {
-    position: relative;
-    right: 290px;
-    top: 50px;
+    margin-right: 6.5rem;
 }
 
 .main__card-container {
     width: auto;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    position: relative;
-    right: 50px;
+    flex-wrap: wrap;
+    margin-inline: auto;
 }
 
 .main__card {
-    width: 370px;
-    height: 390px;
-    margin-right: 1rem;
+    width: 23.125rem;
+    height: 24.375rem;
+    margin: 2rem 1rem;
 }
 
 .main__card > img {
@@ -250,8 +230,8 @@ main {
     position: relative;
     bottom: 102px;
     left: 4px;
-    width: 364px;
-    height: 90px;
+    width: 22.75rem;
+    height: 5.625rem;
     background-color: rgba(211, 211, 211, 0.767);
     border-radius: 0px 0px 0px 15px;
 }
@@ -278,15 +258,14 @@ main {
 
 .main__cart {
     position: relative;
-    bottom: 60px;
-    left: 310px;
+    bottom: 3rem;
+    left: 19.525rem;
     cursor: pointer;
 }
 
 .more__icon {
     position: relative;
-    top: 250px;
-    right: 410px;
+    left: 67%;
 }
 
 /*///*/
@@ -297,11 +276,13 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 2rem;
 }
 
 
 .article__content-soap {
     width: auto;
+    min-width: 360px;
     height: 520px;
     font-size: 2rem;
     color: white;
@@ -319,6 +300,10 @@ main {
     background-color: white;
     border-radius: 0.5rem;
     margin-left: 50px;
+}
+
+.product__soap > img {
+    max-width: 650px;
 }
 
 /*///*/
@@ -376,7 +361,7 @@ main {
     position: relative;
     bottom: 100px;
     left: 3px;
-    background-color: rgba(211, 211, 211, 0.342);
+    background-color: rgba(211, 211, 211, 0.767);
     border-radius: 0px 0px 0px 20px;
 }
 
@@ -408,7 +393,7 @@ main {
     cursor: pointer;
 }
 
-/*///*/
+/* Blog = card top border, type, small details */
 
 .blog {
     height: auto;
@@ -422,19 +407,21 @@ main {
 
 .blog__card-container {
     width: 100%;
-    height: 450px;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 3rem;
     padding-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .blog__card {
-    width: 370px;
+    width: 340px;
     height: 395px;
     border-radius: 1rem;
     box-shadow: 2px 2px 4px rgb(180, 180, 180);
+    margin: 2rem 1.5rem;
 }
 
 .blog__content > h4 {
@@ -446,15 +433,20 @@ main {
     padding: 1rem;
 }
 
-/*///*/
+/* Footer */
 
 footer {
     width: auto;
-    height: 250px;
+    height: auto;
     background-color: whitesmoke;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+footer > h1 {
+    padding-top: 2rem;
 }
 
 .links {
@@ -467,6 +459,8 @@ footer {
 .links > h3 {
     margin-bottom: 10px;
     color: #5fd788;
+    padding-top: 2rem;
+    padding-inline: 2rem;
 }
 
 .links > a {
@@ -477,4 +471,6 @@ footer {
 aside {
     text-align: center;
     background-color: whitesmoke;
+    padding-top: 2rem;
 }
+
